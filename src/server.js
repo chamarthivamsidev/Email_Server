@@ -12,7 +12,7 @@ app.get("/", function (req, res) {
 
 app.post("/form", function (req, res) {
   try {
-    return res.status(200).send({ message: "Hello Welcome" });
+    return res.status(200).send({ message: "Hello" });
   } catch (error) {
     return res.status(400).send({ message: error.message });
   }
