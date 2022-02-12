@@ -10,7 +10,7 @@ app.get("/", function (req, res) {
   }
 });
 
-app.post("/", function (req, res) {
+app.post("/form", function (req, res) {
   try {
     return res.status(200).send({ message: "Hello Welcome" });
   } catch (error) {
