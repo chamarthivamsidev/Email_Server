@@ -10,6 +10,14 @@ app.get("/", function (req, res) {
   }
 });
 
+app.post("/", function (req, res) {
+  try {
+    return res.status(200).send({ message: "Hello Welcome" });
+  } catch (error) {
+    return res.status(400).send({ message: error.message });
+  }
+});
+
 const port = process.env.PORT || 3333;
 
 app.listen(port, () => {
